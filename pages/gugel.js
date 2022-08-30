@@ -11,7 +11,7 @@ export default function Gugel() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome Gugel! Hello World.
+          Welcome Gugel! Hello World. Neuer Test Text!
         </h1>
 
         <p className={styles.description}>
