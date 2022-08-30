@@ -11,7 +11,7 @@ export default function Kowalsky() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome Kowalsky! Test.
+          Welcome Kowalsky! Test. Neuer Test Text 2!
         </h1>
 
         <p className={styles.description}>
