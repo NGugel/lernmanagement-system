@@ -1,61 +1,80 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Button from '@mui/material/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+
+import HeadComponent from "../components/hidden/head";
+import FootComponent from "../components/hidden/foot";
+
+import NavbarComponent from "../components/navbar";
+import CarouselComponent from "../components/carousel";
+import FooterComponent from "../components/footer";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
+  <>
+    <HeadComponent title="DHBW Lernsoftware - Homepage"></HeadComponent>
+    {/*   --- Start Content ---  */}
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+    <NavbarComponent></NavbarComponent>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+    <main>
+      {/* Carousel */}
+      <CarouselComponent></CarouselComponent>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <Button variant="contained">Contained</Button>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+      {/* Popular Lecutres */}
+      <Container className="marketing">
+        <h1 class="main-title">Beliebte Vorlesungen</h1>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <Row>
+          <Col lg="4">
+            <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+            <h2 className="fw-normal">Analysis</h2>
+            <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
+          </Col>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+          <Col lg="4">
+            <img className="roundedImage" src="assets/image/thInf.jpg"/>
 
-      <footer className={styles.footer}>
-        <a href="https://next.new" target="_blank" rel="noopener noreferrer">
-          Created with&nbsp;<b>next.new</b>&nbsp;⚡️
-        </a>
-      </footer>
-    </div>
+            <h2 className="fw-normal">Theoretische Informatik I</h2>
+            <p>Fragen zu den Themen Mengen und Relationen.</p>
+          </Col>
+
+          <Col lg="4">
+            <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
+
+            <h2 className="fw-normal">Python</h2>
+            <p>Fragen rund um die Programmiersprache Python.</p>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col lg="4"><Button variant="danger" href="#">Themen</Button></Col>
+          <Col lg="4"><Button variant="danger" href="#">Themen</Button></Col>
+          <Col lg="4"><Button variant="danger" href="#">Themen</Button></Col>
+        </Row>
+        
+        <Row>
+          <Col className="center">
+            <a href="#">Weitere Vorlesungen</a>
+          </Col>
+        </Row>
+        
+      </Container>
+
+      {/* Map Component */}
+      <Container>
+        <hr/>
+        <div className="mapouter"><div className="gmap_canvas"><iframe width="100%" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=dhbw%20l%C3%B6rrach&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br/></div></div>
+      </Container>
+
+      {/* Footer */}
+      <FooterComponent></FooterComponent>
+    </main>
+
+    {/*   --- End Content ---  */}
+    <FootComponent></FootComponent>
+  </>
   );
 }
