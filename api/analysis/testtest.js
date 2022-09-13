@@ -14,6 +14,14 @@ export function getRandomQuestionReihen() {
   return data.analysis.reihen.fragenUndAntworten[randomNumber].frage;
 }
 
+export function getRandomQuestionDifferenzialrechnung() {
+  let data = require('../../db2.json');
+  let randomNumber = Math.floor(Math.random() * data.analysis.differenzialrechnung.fragenUndAntworten.length);
+  console.log(randomNumber);
+  console.log(data.analysis.differenzialrechnung.fragenUndAntworten[randomNumber].frage);
+  return data.analysis.differenzialrechnung.fragenUndAntworten[randomNumber].frage;
+}
+
 
 
 /*
