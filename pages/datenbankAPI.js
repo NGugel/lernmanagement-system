@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 //import Typography from '@mui/material/Typography';
 //import CourseCard from './CourseCard';
 
-function FragenZuFolgen() {
+export function FragenZuFolgen() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ function FragenZuFolgen() {
   );
 }
 
-function FragenZuReihen() {
+export function FragenZuReihen() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
@@ -58,4 +58,4 @@ function FragenZuReihen() {
   );
 }
 
-export {FragenZuFolgen, FragenZuReihen};
+//export {FragenZuFolgen, FragenZuReihen};
