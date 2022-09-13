@@ -42,6 +42,7 @@ export function FragenZuReihen() {
       );
       const data = await response.json();
       setQuestions(data);
+      print(data);
     };
     loadData().catch(console.error);
   }, []);
