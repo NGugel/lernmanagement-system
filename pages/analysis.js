@@ -11,7 +11,7 @@ import CarouselComponent from "../components/carousel";
 import FooterComponent from "../components/footer";
 
 //import Questions from "./datenbankAPI";
-import FragenZuFolgen from '../api/analysis/fragenZuFolgenAPI';
+//import FragenZuFolgen from '../api/analysis/fragenZuFolgenAPI';
 //import {FragenZuFolgen, FragenZuReihen} from './datenbankAPI';
 
 export default function Analysis() {
@@ -54,7 +54,7 @@ export default function Analysis() {
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
-            <FragenZuFolgen/>
+            
             <h2 className="fw-normal">Platzhaltertext2</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
