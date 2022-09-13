@@ -12,6 +12,7 @@ import FooterComponent from "../components/footer";
 
 import Questions from "./datenbankAPI";
 import FragenZuFolgen from './datenbankAPI';
+import FragenZuReihen from './datenbankAPI';
 
 export default function Analysis() {
   return (
