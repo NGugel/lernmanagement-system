@@ -3,9 +3,8 @@ import { useEffect, useState } from 'react';
 //import CourseCard from './CourseCard';
 
 export function FragenZuFolgen2() {
-  const [questions, setQuestions] = useState([]);
+  //const [questions, setQuestions] = useState([]);
 
-  useEffect(() => {
     // fetch data from github.com/ngugel/lernmanagement-system/db.json
     // (fake REST server, see https://my-json-server.typicode.com)
     const loadData = async () => {
@@ -13,13 +12,9 @@ export function FragenZuFolgen2() {
         'https://my-json-server.typicode.com/ngugel/lernmanagement-system/fragenZuFolgen'
       );
       const data = await response.json();
-      setQuestions(data);
+      return data;
     };
-    loadData().catch(console.error);
-  }, []);
-
-  if (questions.length === 0)
-    return <h5>Keine Kurse</h5>;
-
-  return questions;
+    //loadData().catch(console.error);
+   
+  return loadData;
 }
