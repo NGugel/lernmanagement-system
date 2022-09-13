@@ -36,14 +36,14 @@ export default function Folgen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
 
-            <h2 className="fw-normal">Reihen {API.getRandomAlgebraischeStrukturenQuestion()}</h2>
+            <h2 className="fw-normal">Reihen {API.getRandomAlgebraischeStrukturenQuestion()}{API.getRandomLogikQuestion()}</h2>
             <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/thInf.jpg"/>
 
-            <h2 className="fw-normal">Platzhaltertext {API.getRandomFolgenQuestion()}</h2>
+            <h2 className="fw-normal">Platzhaltertext {API.getRandomFolgenQuestion()}{API.getRandomAlgorithmenQuestion()}</h2>
             <p>Fragen zu den Themen Mengen und Relationen.</p>
           </Col>
 

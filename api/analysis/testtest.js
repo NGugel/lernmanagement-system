@@ -1,3 +1,5 @@
+//---------------Analysis------------------
+//Folgen
 export function getRandomFolgenQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.analysis.folgen.fragenUndAntworten.length);
@@ -6,6 +8,7 @@ export function getRandomFolgenQuestion() {
   return data.analysis.folgen.fragenUndAntworten[randomNumber].frage;
 }
 
+//Reihen
 export function getRandomReihenQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.analysis.reihen.fragenUndAntworten.length);
@@ -14,6 +17,7 @@ export function getRandomReihenQuestion() {
   return data.analysis.reihen.fragenUndAntworten[randomNumber].frage;
 }
 
+//Differenzialrechnung
 export function getRandomDifferenzialrechnungsQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.analysis.differenzialrechnung.fragenUndAntworten.length);
@@ -22,6 +26,7 @@ export function getRandomDifferenzialrechnungsQuestion() {
   return data.analysis.differenzialrechnung.fragenUndAntworten[randomNumber].frage;
 }
 
+//Integralrechnung
 export function getRandomIntegralrechungsQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.analysis.integralrechnung.fragenUndAntworten.length);
@@ -30,6 +35,9 @@ export function getRandomIntegralrechungsQuestion() {
   return data.analysis.integralrechnung.fragenUndAntworten[randomNumber].frage;
 }
 
+
+//---------------Theoretische Informatik I------------------
+//Algebraische Strukturen
 export function getRandomAlgebraischeStrukturenQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.theoretischeInformatikI.algebraischeStrukturen.fragenUndAntworten.length);
@@ -38,11 +46,20 @@ export function getRandomAlgebraischeStrukturenQuestion() {
   return data.theoretischeInformatikI.algebraischeStrukturen.fragenUndAntworten[randomNumber].frage;
 }
 
-/*
-export function FragenZuFolgen2() {
-  let data = require('../../db.json');
-  let randomNumber = Math.floor(Math.random() * data.fragenZuFolgen.length);;
+//Logik
+export function getRandomLogikQuestion() {
+  let data = require('../../db2.json');
+  let randomNumber = Math.floor(Math.random() * data.theoretischeInformatikI.logik.fragenUndAntworten.length);
   console.log(randomNumber);
-  console.log(data.fragenZuFolgen[randomNumber].question);
-  return data.fragenZuFolgen[randomNumber].question;
-}*/
+  console.log(data.theoretischeInformatikI.logik.fragenUndAntworten[randomNumber].frage);
+  return data.theoretischeInformatikI.logik.fragenUndAntworten[randomNumber].frage;
+}
+
+//Algorithmen
+export function getRandomAlgorithmenQuestion() {
+  let data = require('../../db2.json');
+  let randomNumber = Math.floor(Math.random() * data.theoretischeInformatikI.algorithmen.fragenUndAntworten.length);
+  console.log(randomNumber);
+  console.log(data.theoretischeInformatikI.algorithmen.fragenUndAntworten[randomNumber].frage);
+  return data.theoretischeInformatikI.algorithmen.fragenUndAntworten[randomNumber].frage;
+}
