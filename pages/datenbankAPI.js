@@ -6,11 +6,11 @@ export default function Questions() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
-    // fetch data from github.com/behrends/nextjs-nav-mui/db.json
+    // fetch data from github.com/ngugel/lernmanagement-system/db.json
     // (fake REST server, see https://my-json-server.typicode.com)
     const loadData = async () => {
       const response = await fetch(
-        'https://my-json-server.typicode.com/ngugel/lernmanagement-system/questions'
+        'https://my-json-server.typicode.com/ngugel/lernmanagement-system/folgen.questions'
       );
       const data = await response.json();
       setQuestions(data);
@@ -23,7 +23,7 @@ export default function Questions() {
 
   return (
     <>
-      {questions.map((question) => (
+      {folgen.questions.map((question) => (
         <p key={question.id}> {question.question}</p>
       ))}
     </>
