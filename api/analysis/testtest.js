@@ -15,7 +15,7 @@ export async function FragenZuFolgen2() {
 }*/
 
 export function FragenZuFolgen2() {
-  let dataFile = require('./test.json');
+  let dataFile = require('../../db.json');
   console.log(dataFile.fragenZuFolgen[0].question);
   return dataFile.fragenZuFolgen[0].question;
   /*
