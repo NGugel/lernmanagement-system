@@ -1,5 +1,6 @@
 export function FragenZuFolgen2() {
-  let dataFile = require('../../db.json');
-  console.log(dataFile.fragenZuFolgen.length);
-  return dataFile.fragenZuFolgen.length;
+  let data = require('../../db.json');
+  let randomNumber = Math.random(data.fragenZuFolgen.length);
+  console.log(data.fragenZuFolgen[randomNumber].question);
+  return data.fragenZuFolgen[randomNumber].question;
 }
