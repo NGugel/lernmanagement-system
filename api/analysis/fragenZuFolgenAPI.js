@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 //import Typography from '@mui/material/Typography';
 //import CourseCard from './CourseCard';
 
-export default function FragenZuFolgenOld() {
+export default function FragenZuFolgen() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
