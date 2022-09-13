@@ -50,7 +50,7 @@ export default function Folgen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
             
-            <h2 className="fw-normal">Platzhaltertext2</h2>
+            <h2 className="fw-normal">Platzhaltertext2 {API.getRandomQuestionReihen()}</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
 
