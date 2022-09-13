@@ -1,58 +1,119 @@
 {
-  "fragenZuFolgen": [
-    {
-      "id": 1,
-      "question": "TIF21Aasdf",
-      "answer": "test"
+  "analysis": {
+    "folgen": {
+      "fragenUndAntworten": [
+        {
+          "id": 1, 
+          "frage": "TestfrageFolgen", 
+          "antwort": "TestantwortFolgen!"
+        },
+        {
+          "id": 2, 
+          "frage": "TestfrageFolgen2", 
+          "antwort": "TestantwortFolgen2!"
+        }
+      ]
     },
-    {
-      "id": 2,
-      "question": "TIF21B",
-      "answer": "test2"
+    "reihen": {
+      "fragenUndAntworten": [
+        {
+          "id": 1, 
+          "frage": "TestfrageReihen", 
+          "antwort": "TestantwortReihen!"
+        },
+        {
+          "id": 2, 
+          "frage": "TestfrageReihen2", 
+          "antwort": "TestantwortReihen2!"
+        }
+      ]
     },
-    {
-      "id": 3,
-      "question": "TIF22A"
+    "differenzialrechnung": {
+      "fragenUndAntworten": [
+        {
+          "id": 1, 
+          "frage": "TestfrageDiff", 
+          "antwort": "TestantwortDiff!"
+        },
+        {
+          "id": 2, 
+          "frage": "TestfrageDiff2", 
+          "antwort": "TestantwortDiff2!"
+        }
+      ]
     },
-    {
-      "id": 4,
-      "question": "WWI21A"
-    },
-    {
-      "id": 5,
-      "question": "WWI22A"
-    },
-    {
-      "id": 6,
-      "question": "WWI22B"
+    "integralrechnung": {
+      "fragenUndAntworten": [
+        {
+          "id": 1, 
+          "frage": "TestfrageInteg", 
+          "antwort": "TestantwortInteg!"
+        },
+        {
+          "id": 2, 
+          "frage": "TestfrageInteg2", 
+          "antwort": "TestantwortInteg2!"
+        }
+      ]
     }
-  ],
-  "fragenZuReihen": [
-    {
-      "id": 1,
-      "question": "TIF21Atest",
-      "answer": "test"
+  },
+  "theoretischeInformatikI": {
+    "algebraischeStrukturen": {
+      "fragenUndAntworten": [
+        {
+          "id": 1,
+          "frage": "testfrageTheo",
+          "antwort": "testantwortTheo"
+        },
+        {
+          "id": 2,
+          "frage": "testfrageTheo2",
+          "antwort": "testantwortTheo2"
+        },
+        {
+          "id": 3,
+          "frage": "testfrageTheo3",
+          "antwort": "testantwortTheo3"
+        }
+      ]
     },
-    {
-      "id": 2,
-      "question": "TIF21Btest2",
-      "answer": "test2"
+    "logik": {
+      "fragenUndAntworten": [
+        {
+          "id": 1,
+          "frage": "testfrageLogik",
+          "antwort": "testantwortLogik"
+        },
+        {
+          "id": 2,
+          "frage": "testfrageLogik2",
+          "antwort": "testantwortLogik2"
+        },
+        {
+          "id": 3,
+          "frage": "testfrageLogik3",
+          "antwort": "testantwortLogik3"
+        }
+      ]
     },
-    {
-      "id": 3,
-      "name": "TIF22A"
-    },
-    {
-      "id": 4,
-      "name": "WWI21A"
-    },
-    {
-      "id": 5,
-      "name": "WWI22A"
-    },
-    {
-      "id": 6,
-      "name": "WWI22B"
+    "algorithmen": {
+      "fragenUndAntworten": [
+        {
+          "id": 1,
+          "frage": "testfrageAlgo",
+          "antwort": "testantwortAlgo"
+        },
+        {
+          "id": 2,
+          "frage": "testfrageAlgo2",
+          "antwort": "testantwortAlgo2"
+        },
+        {
+          "id": 3,
+          "frage": "testfrageAlgo3",
+          "antwort": "testantwortAlgo3"
+        }
+      ]
     }
-  ]
+  }
 }
