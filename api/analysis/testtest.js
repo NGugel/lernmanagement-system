@@ -5,11 +5,17 @@ export function FragenZuFolgen2Old() {
   const data = fetch('https://my-json-server.typicode.com/ngugel/lernmanagement-system/fragenZuFolgen');
   return data;
 }
-*/
+
 export async function FragenZuFolgen2() {
   const response = await fetch('https://my-json-server.typicode.com/ngugel/lernmanagement-system/fragenZuFolgen');
   const data = await response.json();
   console.log(names); 
   return data;
   // logs [{ name: 'Joker'}, { name: 'Batman' }]
+}*/
+
+export function FragenZuFolgen2() {
+  let data = JSON.parse(localStorage.getItem('fragenZuFolgen'));
+  console.log(data);
+  return data;
 }
