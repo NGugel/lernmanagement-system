@@ -11,7 +11,7 @@ import CarouselComponent from "../components/carousel";
 import FooterComponent from "../components/footer";
 
 //import Questions from "./datenbankAPI";
-import {FragenZuFolgen,FragenZuReihen} from './datenbankAPI';
+import {FragenZuFolgen, FragenZuReihen} from './datenbankAPI';
 
 export default function Analysis() {
   return (

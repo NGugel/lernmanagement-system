@@ -58,4 +58,4 @@ function FragenZuReihen() {
   );
 }
 
-export default {FragenZuFolgen, FragenZuReihen};
+export {FragenZuFolgen, FragenZuReihen};
