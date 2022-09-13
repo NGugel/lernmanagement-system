@@ -10,7 +10,7 @@ import NavbarComponent from "../components/navbar";
 import CarouselComponent from "../components/carousel";
 import FooterComponent from "../components/footer";
 
-import Questions from "datenbankAPI.js";
+import Questions from "./datenbankAPI";
 
 export default function Analysis() {
   return (
