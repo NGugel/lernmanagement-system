@@ -15,7 +15,7 @@ export async function FragenZuFolgen2() {
 }*/
 
 export function FragenZuFolgen2() {
-  let data = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+  let data = "test123";
   console.log(data);
   return data;
 }
