@@ -50,9 +50,9 @@ export default function Analysis() {
         </Row>
 
         <Row>
-          <Col lg="4"><Button variant="danger" href="/reihen">Test1</Button></Col>
-          <Col lg="4"><Button variant="danger" href="#">Test2</Button></Col>
-          <Col lg="4"><Button variant="danger" href="#">Test3</Button></Col>
+          <Col lg="4"><Button variant="danger" href="/analysis-reihen">Test1</Button></Col>
+          <Col lg="4"><Button variant="danger" href="/analysis-folgen">Test2</Button></Col>
+          <Col lg="4"><Button variant="danger" href="/analysis-differnzialrechnung">Test3</Button></Col>
         </Row>
         
         <Row>
