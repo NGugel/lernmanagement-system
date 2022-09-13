@@ -36,28 +36,28 @@ export default function Folgen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
 
-            <h2 className="fw-normal">Reihen {API.getRandomAlgebraischeStrukturenQuestion()}{API.getRandomLogikQuestion()}</h2>
+            <h2 className="fw-normal">Algebraische Strukturen {API.getRandomAlgebraischeStrukturenQuestion()} Logik {API.getRandomLogikQuestion()}</h2>
             <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/thInf.jpg"/>
 
-            <h2 className="fw-normal">Platzhaltertext {API.getRandomFolgenQuestion()}{API.getRandomAlgorithmenQuestion()}</h2>
+            <h2 className="fw-normal">Folgen {API.getRandomFolgenQuestion()} Algorithmen {API.getRandomAlgorithmenQuestion()}</h2>
             <p>Fragen zu den Themen Mengen und Relationen.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
             
-            <h2 className="fw-normal">Platzhaltertext2 {API.getRandomReihenQuestion()}</h2>
+            <h2 className="fw-normal">Reihen {API.getRandomReihenQuestion()}</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
             
-            <h2 className="fw-normal">Platzhaltertext2 {API.getRandomDifferenzialrechnungsQuestion()}{API.getRandomIntegralrechungsQuestion()}</h2>
+            <h2 className="fw-normal">Differenzialrechnung {API.getRandomDifferenzialrechnungsQuestion()} Integralrechnung {API.getRandomIntegralrechungsQuestion()}</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
 
