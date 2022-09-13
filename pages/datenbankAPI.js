@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 //import Typography from '@mui/material/Typography';
 //import CourseCard from './CourseCard';
 
-export default function Questions() {
+export default function FragenZuFolgen() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
@@ -10,7 +10,7 @@ export default function Questions() {
     // (fake REST server, see https://my-json-server.typicode.com)
     const loadData = async () => {
       const response = await fetch(
-        'https://my-json-server.typicode.com/ngugel/lernmanagement-system/folgen.questions'
+        'https://my-json-server.typicode.com/ngugel/lernmanagement-system/fragenZuFolgen'
       );
       const data = await response.json();
       setQuestions(data);
@@ -23,7 +23,7 @@ export default function Questions() {
 
   return (
     <>
-      {folgen.questions.map((question) => (
+      {questions.map((question) => (
         <p key={question.id}> {question.question}</p>
       ))}
     </>
