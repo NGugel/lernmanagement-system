@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import Typography from '@mui/material/Typography';
-import CourseCard from './CourseCard';
+//import Typography from '@mui/material/Typography';
+//import CourseCard from './CourseCard';
 
-export default function Courses() {
+export default function Questions() {
   const [questions, setQuestions] = useState([]);
 
   useEffect(() => {
