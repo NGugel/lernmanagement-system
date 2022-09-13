@@ -56,5 +56,26 @@
         }
       ]
     }
+  },
+  "theoretischeInformatikI": {
+    "algebraischeStrukturen": {
+      "fragenUndAntworten": [
+        {
+          "id": 1,
+          "frage": "testfrageTheo",
+          "antwort": "testantwortTheo"
+        },
+        {
+          "id": 2,
+          "frage": "testfrageTheo2",
+          "antwort": "testantwortTheo2"
+        },
+        {
+          "id": 3,
+          "frage": "testfrageTheo3",
+          "antwort": "testantwortTheo3"
+        }
+      ]
+    }
   }
 }

@@ -36,28 +36,28 @@ export default function Folgen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
 
-            <h2 className="fw-normal">Reihen</h2>
+            <h2 className="fw-normal">Reihen {API.getRandomAlgebraischeStrukturenQuestion()}</h2>
             <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/thInf.jpg"/>
 
-            <h2 className="fw-normal">Platzhaltertext {API.FragenZuFolgen2()}</h2>
+            <h2 className="fw-normal">Platzhaltertext {API.getRandomFolgenQuestion()}</h2>
             <p>Fragen zu den Themen Mengen und Relationen.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
             
-            <h2 className="fw-normal">Platzhaltertext2 {API.getRandomQuestionReihen()}</h2>
+            <h2 className="fw-normal">Platzhaltertext2 {API.getRandomReihenQuestion()}</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
             
-            <h2 className="fw-normal">Platzhaltertext2 {API.getRandomQuestionDifferenzialrechnung()}</h2>
+            <h2 className="fw-normal">Platzhaltertext2 {API.getRandomDifferenzialrechnungsQuestion()}{API.getRandomIntegralrechungsQuestion()}</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
 

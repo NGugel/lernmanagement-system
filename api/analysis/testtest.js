@@ -1,4 +1,4 @@
-export function FragenZuFolgen2() {
+export function getRandomFolgenQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.analysis.folgen.fragenUndAntworten.length);
   console.log(randomNumber);
@@ -6,7 +6,7 @@ export function FragenZuFolgen2() {
   return data.analysis.folgen.fragenUndAntworten[randomNumber].frage;
 }
 
-export function getRandomQuestionReihen() {
+export function getRandomReihenQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.analysis.reihen.fragenUndAntworten.length);
   console.log(randomNumber);
@@ -14,7 +14,7 @@ export function getRandomQuestionReihen() {
   return data.analysis.reihen.fragenUndAntworten[randomNumber].frage;
 }
 
-export function getRandomQuestionDifferenzialrechnung() {
+export function getRandomDifferenzialrechnungsQuestion() {
   let data = require('../../db2.json');
   let randomNumber = Math.floor(Math.random() * data.analysis.differenzialrechnung.fragenUndAntworten.length);
   console.log(randomNumber);
@@ -22,7 +22,21 @@ export function getRandomQuestionDifferenzialrechnung() {
   return data.analysis.differenzialrechnung.fragenUndAntworten[randomNumber].frage;
 }
 
+export function getRandomIntegralrechungsQuestion() {
+  let data = require('../../db2.json');
+  let randomNumber = Math.floor(Math.random() * data.analysis.integralrechnung.fragenUndAntworten.length);
+  console.log(randomNumber);
+  console.log(data.analysis.integralrechnung.fragenUndAntworten[randomNumber].frage);
+  return data.analysis.integralrechnung.fragenUndAntworten[randomNumber].frage;
+}
 
+export function getRandomAlgebraischeStrukturenQuestion() {
+  let data = require('../../db2.json');
+  let randomNumber = Math.floor(Math.random() * data.theoretischeInformatikI.algebraischeStrukturen.fragenUndAntworten.length);
+  console.log(randomNumber);
+  console.log(data.theoretischeInformatikI.algebraischeStrukturen.fragenUndAntworten[randomNumber].frage);
+  return data.theoretischeInformatikI.algebraischeStrukturen.fragenUndAntworten[randomNumber].frage;
+}
 
 /*
 export function FragenZuFolgen2() {
