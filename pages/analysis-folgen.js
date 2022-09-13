@@ -43,7 +43,7 @@ export default function Folgen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/thInf.jpg"/>
 
-            <h2 className="fw-normal">Platzhaltertext {API.getTest()}</h2>
+            <h2 className="fw-normal">Platzhaltertext {API.FragenZuFolgen2()}</h2>
             <p>Fragen zu den Themen Mengen und Relationen.</p>
           </Col>
 
