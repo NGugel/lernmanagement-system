@@ -1,26 +1,5 @@
-//import Typography from '@mui/material/Typography';
-//import CourseCard from './CourseCard';
-/*
-export function FragenZuFolgen2Old() {
-  const data = fetch('https://my-json-server.typicode.com/ngugel/lernmanagement-system/fragenZuFolgen');
-  return data;
-}
-
-export async function FragenZuFolgen2() {
-  const response = await fetch('https://my-json-server.typicode.com/ngugel/lernmanagement-system/fragenZuFolgen');
-  const data = await response.json();
-  console.log(names); 
-  return data;
-  // logs [{ name: 'Joker'}, { name: 'Batman' }]
-}*/
-
 export function FragenZuFolgen2() {
   let dataFile = require('../../db.json');
-  console.log(dataFile.fragenZuFolgen[0].question);
-  return dataFile.fragenZuFolgen[0].question;
-  /*
-  let data = JSON.parse('test.json');
-  console.log(data.fragenZuFolgen[0].question);
-  return data.fragenZuFolgen[0].question;
-  */
+  console.log(dataFile.fragenZuFolgen.length);
+  return dataFile.fragenZuFolgen.length;
 }
