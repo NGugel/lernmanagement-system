@@ -10,7 +10,7 @@ import NavbarComponent from "../components/navbar";
 import CarouselComponent from "../components/carousel";
 import FooterComponent from "../components/footer";
 
-export default function Mathe() {
+export default function Analysis() {
   return (
   <>
     <HeadComponent title="DHBW Lernsoftware - Homepage"></HeadComponent>
@@ -30,27 +30,27 @@ export default function Mathe() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
 
-            <h2 className="fw-normal">Analysis</h2>
+            <h2 className="fw-normal">Reihen</h2>
             <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/thInf.jpg"/>
 
-            <h2 className="fw-normal">Theoretische Informatik I</h2>
+            <h2 className="fw-normal">Platzhaltertext</h2>
             <p>Fragen zu den Themen Mengen und Relationen.</p>
           </Col>
 
           <Col lg="4">
             <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
 
-            <h2 className="fw-normal">Python</h2>
+            <h2 className="fw-normal">Platzhaltertext2</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
         </Row>
 
         <Row>
-          <Col lg="4"><Button variant="danger" href="#">Test1</Button></Col>
+          <Col lg="4"><Button variant="danger" href="#/reihen">Test1</Button></Col>
           <Col lg="4"><Button variant="danger" href="#">Test2</Button></Col>
           <Col lg="4"><Button variant="danger" href="#">Test3</Button></Col>
         </Row>
