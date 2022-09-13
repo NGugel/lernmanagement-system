@@ -14,6 +14,8 @@ import FooterComponent from "../components/footer";
 //import FragenZuFolgen from './api/analysis/fragenZuFolgenAPI';
 //import {FragenZuFolgen, FragenZuReihen} from './datenbankAPI';
 
+import * as API from "../api/analysis/testtest"
+
 export default function Folgen() {
   return (
   <>
@@ -41,7 +43,7 @@ export default function Folgen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/thInf.jpg"/>
 
-            <h2 className="fw-normal">Platzhaltertext</h2>
+            <h2 className="fw-normal">Platzhaltertext {API.getTest()}</h2>
             <p>Fragen zu den Themen Mengen und Relationen.</p>
           </Col>
 
