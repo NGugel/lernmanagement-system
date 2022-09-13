@@ -14,7 +14,7 @@ import FooterComponent from "../components/footer";
 //import FragenZuFolgen from './api/analysis/fragenZuFolgenAPI';
 //import {FragenZuFolgen, FragenZuReihen} from './datenbankAPI';
 
-import * as API from "../api/analysis/testtest"
+import * as API from "../api/datenbankAPI"
 
 export default function Folgen() {
   return (

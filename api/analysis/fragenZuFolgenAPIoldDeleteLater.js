@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 //import Typography from '@mui/material/Typography';
 //import CourseCard from './CourseCard';
 
+//Deprecated! Die Daten wurden von html Elementen getrennt und werden roh extrahiert fuer eine individuellere Verwendung!
 export default function FragenZuFolgen() {
   const [questions, setQuestions] = useState([]);
 

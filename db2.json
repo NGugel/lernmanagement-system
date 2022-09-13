@@ -4,13 +4,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "Testfrage", 
-          "antwort": "Testantwort!"
+          "frage": "TestfrageFolgen", 
+          "antwort": "TestantwortFolgen!"
         },
         {
           "id": 2, 
-          "frage": "Testfrage2", 
-          "antwort": "Testantwort2!"
+          "frage": "TestfrageFolgen2", 
+          "antwort": "TestantwortFolgen2!"
         }
       ]
     },
@@ -18,13 +18,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "Testfrage", 
-          "antwort": "Testantwort!"
+          "frage": "TestfrageReihen", 
+          "antwort": "TestantwortReihen!"
         },
         {
           "id": 2, 
-          "frage": "Testfrage2", 
-          "antwort": "Testantwort2!"
+          "frage": "TestfrageReihen2", 
+          "antwort": "TestantwortReihen2!"
         }
       ]
     },
@@ -32,13 +32,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "Testfrage", 
-          "antwort": "Testantwort!"
+          "frage": "TestfrageDiff", 
+          "antwort": "TestantwortDiff!"
         },
         {
           "id": 2, 
-          "frage": "Testfrage2", 
-          "antwort": "Testantwort2!"
+          "frage": "TestfrageDiff2", 
+          "antwort": "TestantwortDiff2!"
         }
       ]
     },
@@ -46,13 +46,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "Testfrage", 
-          "antwort": "Testantwort!"
+          "frage": "TestfrageInteg", 
+          "antwort": "TestantwortInteg!"
         },
         {
           "id": 2, 
-          "frage": "Testfrage2", 
-          "antwort": "Testantwort2!"
+          "frage": "TestfrageInteg2", 
+          "antwort": "TestantwortInteg2!"
         }
       ]
     }
