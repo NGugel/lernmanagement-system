@@ -2,7 +2,7 @@
   "fragenZuFolgen": [
     {
       "id": 1,
-      "question": "TIF21A",
+      "question": "TIF21Aasdf",
       "answer": "test"
     },
     {
@@ -12,19 +12,19 @@
     },
     {
       "id": 3,
-      "name": "TIF22A"
+      "question": "TIF22A"
     },
     {
       "id": 4,
-      "name": "WWI21A"
+      "question": "WWI21A"
     },
     {
       "id": 5,
-      "name": "WWI22A"
+      "question": "WWI22A"
     },
     {
       "id": 6,
-      "name": "WWI22B"
+      "question": "WWI22B"
     }
   ],
   "fragenZuReihen": [

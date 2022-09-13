@@ -1,12 +1,12 @@
 {
   "analysis": {
-    "reihen": {
+    "folgen": {
       "fragenUndAntworten": [
-        {"frage1": "Testfrage", "antwort1": "Testantwort!"},
-        {"frage2": "Testfrage2", "antwort2": "Testantwort2!"}
+        {"id": 1, "frage": "Testfrage", "antwort": "Testantwort!"},
+        {"id": 2, "frage": "Testfrage2", "antwort": "Testantwort2!"}
       ]
     },
-    "folgen": {
+    "reihen": {
       "fragenUndAntworten": {
         "frage1": "Testfrage", "antwort1": "Testantwort!",
         "frage2": "Testfrage2", "antwort2": "Testantwort2!"
