@@ -15,7 +15,7 @@ export async function FragenZuFolgen2() {
 }*/
 
 export function FragenZuFolgen2() {
-  let data = JSON.parse('../db');
+  let data = JSON.parse('../db.json');
   console.log(data);
   return data;
 }
