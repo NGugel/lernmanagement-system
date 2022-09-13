@@ -1,0 +1,28 @@
+{
+  "analysis": {
+    "reihen": {
+      "fragenUndAntworten": [
+        {"frage1": "Testfrage", "antwort1": "Testantwort!"},
+        {"frage2": "Testfrage2", "antwort2": "Testantwort2!"}
+      ]
+    },
+    "folgen": {
+      "fragenUndAntworten": {
+        "frage1": "Testfrage", "antwort1": "Testantwort!",
+        "frage2": "Testfrage2", "antwort2": "Testantwort2!"
+      }
+    },
+    "differenzialrechnung": {
+      "fragenUndAntworten": {
+        "frage1": "Testfrage", "antwort1": "Testantwort!",
+        "frage2": "Testfrage2", "antwort2": "Testantwort2!"
+      }
+    },
+    "integralrechnung": {
+      "fragenUndAntworten": {
+        "frage1": "Testfrage", "antwort1": "Testantwort!",
+        "frage2": "Testfrage2", "antwort2": "Testantwort2!"
+      }
+    }
+  }
+}
