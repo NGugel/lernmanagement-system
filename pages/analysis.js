@@ -10,6 +10,8 @@ import NavbarComponent from "../components/navbar";
 import CarouselComponent from "../components/carousel";
 import FooterComponent from "../components/footer";
 
+import Questions from "datenbankAPI.js";
+
 export default function Analysis() {
   return (
   <>
@@ -47,6 +49,14 @@ export default function Analysis() {
             <h2 className="fw-normal">Platzhaltertext2</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
           </Col>
+
+          <Col lg="4">
+            <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
+            <Questions/>
+            <h2 className="fw-normal">Platzhaltertext2</h2>
+            <p>Fragen rund um die Programmiersprache Python.</p>
+          </Col>
+
         </Row>
 
         <Row>
