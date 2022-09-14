@@ -4,13 +4,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "TestfrageFolgen", 
-          "antwort": "TestantwortFolgen!"
+          "frage": "Wie ist eine Folge definiert?", 
+          "antwort": "Eine Folge weist jeder natürlichen Zahl eine reelle Zahl zu."
         },
         {
           "id": 2, 
-          "frage": "TestfrageFolgen2", 
-          "antwort": "TestantwortFolgen2!"
+          "frage": "Wann ist eine Folge streng monoton steigend?", 
+          "antwort": "Eine Folge ist genau dann streng monoton steigend, wenn jedes Folgenglied echt größer als sein Vorgänger ist."
         }
       ]
     },
@@ -18,13 +18,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "TestfrageReihen", 
-          "antwort": "TestantwortReihen!"
+          "frage": "Kann eine Reihe mehr als einen Grenzwert haben?", 
+          "antwort": "Nein, es existiert immer genau ein Grenzwert oder keiner. Bei alternierenden Reihen und Folgen können 2 oder mehr Häufungspunkte existieren."
         },
         {
           "id": 2, 
-          "frage": "TestfrageReihen2", 
-          "antwort": "TestantwortReihen2!"
+          "frage": "Was macht die Taylorentwicklung?", 
+          "antwort": "Die Taylorentwicklung ist eine Approximation an eine (meist nicht algebraische) Funktion an einer Stelle (Entwicklungspunkt)."
         }
       ]
     },
@@ -32,13 +32,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "TestfrageDiff", 
-          "antwort": "TestantwortDiff!"
+          "frage": "Wie ist Injektivität definiert?", 
+          "antwort": "Eine Funktion ist genau dann injektiv, wenn auf jedes Element der Zielmenge höchstens 1 Mal abgebildet wird."
         },
         {
           "id": 2, 
-          "frage": "TestfrageDiff2", 
-          "antwort": "TestantwortDiff2!"
+          "frage": "Wie ist Surjektivität definiert?", 
+          "antwort": "Eine Funktion ist genau dann surjektiv, wenn auf jedes Element der Zielmenge mindestens 1 Mal abgebildet wird."
         }
       ]
     },
@@ -46,13 +46,13 @@
       "fragenUndAntworten": [
         {
           "id": 1, 
-          "frage": "TestfrageInteg", 
-          "antwort": "TestantwortInteg!"
+          "frage": "Welche Ableitungsregel wird durch partielle Integration umgekehrt?", 
+          "antwort": "Produktregel"
         },
         {
           "id": 2, 
-          "frage": "TestfrageInteg2", 
-          "antwort": "TestantwortInteg2!"
+          "frage": "Welche Ableitungsregel wird durch Integration durch Substitution umgekehrt?", 
+          "antwort": "Kettenregel"
         }
       ]
     }
@@ -62,18 +62,18 @@
       "fragenUndAntworten": [
         {
           "id": 1,
-          "frage": "testfrageTheo",
-          "antwort": "testantwortTheo"
+          "frage": "Wie ist die Potenzmenge einer Menge M definiert?",
+          "antwort": "Die Potenzmenge ist die Menge aller Teilmengen von M."
         },
         {
           "id": 2,
-          "frage": "testfrageTheo2",
-          "antwort": "testantwortTheo2"
+          "frage": "Was ist die Kardinalität einer Menge M?",
+          "antwort": "Die Kardinalität von M ist die Anzahl der Elemente von M."
         },
         {
           "id": 3,
-          "frage": "testfrageTheo3",
-          "antwort": "testantwortTheo3"
+          "frage": "Welche Eigenschaften hat eine Äquivalenzrelation?",
+          "antwort": "Eine Äquivalenzrelation ist reflexiv, symmetrisch und transitiv."
         }
       ]
     },
@@ -81,18 +81,18 @@
       "fragenUndAntworten": [
         {
           "id": 1,
-          "frage": "testfrageLogik",
-          "antwort": "testantwortLogik"
+          "frage": "Wie ist eine erfüllbare Formel F definiert?",
+          "antwort": "F ist erfüllbar, falls es eine Interpretation gibt, die Modell für F ist."
         },
         {
           "id": 2,
-          "frage": "testfrageLogik2",
-          "antwort": "testantwortLogik2"
+          "frage": "Wie ist eine allgemeingültige Formel F definiert?",
+          "antwort": "F ist allgemeingültig, falls jede Interpretation ein Modell für F ist."
         },
         {
           "id": 3,
-          "frage": "testfrageLogik3",
-          "antwort": "testantwortLogik3"
+          "frage": "Was ist eine Tautologie?",
+          "antwort": "Eine Tautologie ist eine allgemeingültige Formel."
         }
       ]
     },
@@ -100,18 +100,13 @@
       "fragenUndAntworten": [
         {
           "id": 1,
-          "frage": "testfrageAlgo",
-          "antwort": "testantwortAlgo"
+          "frage": "Was sagt die Churchsche These?",
+          "antwort": "Die Menge der durch eine Turingmaschine berechenbaren Abbildungen (formale Algorithmen) stimmt genau mit der Menge der intuitiv berechenbaren Abbildungen (intuitive Algorithmen) überein."
         },
         {
           "id": 2,
-          "frage": "testfrageAlgo2",
-          "antwort": "testantwortAlgo2"
-        },
-        {
-          "id": 3,
-          "frage": "testfrageAlgo3",
-          "antwort": "testantwortAlgo3"
+          "frage": "Wie viele Algorithmen gibt es?",
+          "antwort": "Es gibt abzählbar viele Algorithmen."
         }
       ]
     }
