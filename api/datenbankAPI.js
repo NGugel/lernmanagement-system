@@ -43,6 +43,23 @@ export function getAllTopics(lectureId) {
     return "Keine gültige VorlesungsID!";
   }
 }
+
+//ein Thema einer Vorlesung mittels id (1. Argument: id der Vorlesung, 2. Argument: id des Themas) abrufen (Rueckgabe ist der Name des Themas)
+export function getTopic(lectureId, topicId) {
+  let data = require('../db.json');
+  if(data.vorlesungen[lectureId - 1] != null) {
+    if(lectureId == 1) {
+      return data.vorlesungen[lectureId - 1].analysis[topicId - 1].name;
+    } else if(lectureId == 2) {
+      return data.vorlesungen[lectureId - 1].theoretischeInformatikI[topicId - 1].name;
+    } else {
+      return "Themenabfrage noch nicht implementiert!";
+    }
+  } else {
+    return "Keine gültige VorlesungsID!";
+  }
+}
+
 //---------------Analysis------------------
 //Folgen
 export function getRandomFolgenQuestion() {
