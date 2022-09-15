@@ -6,7 +6,7 @@ import NavbarComponent from "../components/navbar";
 import FooterComponent from "../components/footer";
 import { flexbox } from '@mui/system';
 
-export default function Lecture() {
+export default function AllLectures() {
   return (
   <>
     <HeadComponent title="DHBW Lernsoftware - Alle Vorlesung"></HeadComponent>
@@ -31,7 +31,7 @@ export default function Lecture() {
             </Row>
         </Container>
 
-        <Container className="d-flex mb-4 justify-content-md-center lectures-container">
+        <Container className="d-flex justify-content-md-center lectures-container">
             <Row>
                 <Col xs className="mb-4">
                     <Card>

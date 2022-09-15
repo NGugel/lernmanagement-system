@@ -30,7 +30,7 @@ export default function Lecture() {
             </Row>
         </Container>
 
-        <Container class="d-flex justify-content-center mb-4">
+        <Container class="d-flex justify-content-center">
             <Col lg="8">
                 <Container className="topics-container">
                     <Row className="topic mb-3 p-4 align-items-center rounded-3 border shadow">
