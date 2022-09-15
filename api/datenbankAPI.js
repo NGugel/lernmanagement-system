@@ -12,13 +12,26 @@ export function getAllLectures() {
 }
 
 //eine Vorlesung mittels id abrufen (Rueckgabe ist der Name der Vorlesung)
-export function getLecture(id) {
+export function getLecture(lectureId) {
   let data = require('../db.json');
-  if(data.vorlesungen[id - 1] != null) {
-    return data.vorlesungen[id - 1].name;
+  if(data.vorlesungen[lectureId - 1] != null) {
+    return data.vorlesungen[lectureId - 1].name;
   } else {
     return "Keine gültige VorlesungsID!";
   }
+}
+
+//---------------Themen------------------
+//alle Themennamen einer Vorlesung (via ID) im Array abrufen
+export function getAllTopics(lectureId) {
+  let data = require('../db.json');
+  let allTopics = [];
+  let lecture = getLecture(lectureId);
+  let dataLecture = "data.vorlesungen[" + lectureId + "]." + lecture;
+  dataLecture.forEach((topic) => {
+    allTopics.push(topic.name);
+  });
+  return allTopics;
 }
 //---------------Analysis------------------
 //Folgen
