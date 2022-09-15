@@ -1,114 +1,225 @@
 {
-  "analysis": {
-    "folgen": {
-      "fragenUndAntworten": [
-        {
-          "id": 1, 
-          "frage": "Wie ist eine Folge definiert?", 
-          "antwort": "Eine Folge weist jeder natürlichen Zahl eine reelle Zahl zu."
-        },
-        {
-          "id": 2, 
-          "frage": "Wann ist eine Folge streng monoton steigend?", 
-          "antwort": "Eine Folge ist genau dann streng monoton steigend, wenn jedes Folgenglied echt größer als sein Vorgänger ist."
-        }
-      ]
-    },
-    "reihen": {
-      "fragenUndAntworten": [
-        {
-          "id": 1, 
-          "frage": "Kann eine Reihe mehr als einen Grenzwert haben?", 
-          "antwort": "Nein, es existiert immer genau ein Grenzwert oder keiner. Bei alternierenden Reihen und Folgen können 2 oder mehr Häufungspunkte existieren."
-        },
-        {
-          "id": 2, 
-          "frage": "Was macht die Taylorentwicklung?", 
-          "antwort": "Die Taylorentwicklung ist eine Approximation an eine (meist nicht algebraische) Funktion an einer Stelle (Entwicklungspunkt)."
-        }
-      ]
-    },
-    "differenzialrechnung": {
-      "fragenUndAntworten": [
-        {
-          "id": 1, 
-          "frage": "Wie ist Injektivität definiert?", 
-          "antwort": "Eine Funktion ist genau dann injektiv, wenn auf jedes Element der Zielmenge höchstens 1 Mal abgebildet wird."
-        },
-        {
-          "id": 2, 
-          "frage": "Wie ist Surjektivität definiert?", 
-          "antwort": "Eine Funktion ist genau dann surjektiv, wenn auf jedes Element der Zielmenge mindestens 1 Mal abgebildet wird."
-        }
-      ]
-    },
-    "integralrechnung": {
-      "fragenUndAntworten": [
-        {
-          "id": 1, 
-          "frage": "Welche Ableitungsregel wird durch partielle Integration umgekehrt?", 
-          "antwort": "Produktregel"
-        },
-        {
-          "id": 2, 
-          "frage": "Welche Ableitungsregel wird durch Integration durch Substitution umgekehrt?", 
-          "antwort": "Kettenregel"
-        }
-      ]
-    }
-  },
-  "theoretischeInformatikI": {
-    "algebraischeStrukturen": {
-      "fragenUndAntworten": [
+  "vorlesungen": [
+    {
+      "id": 1,
+      "name": "Analysis",
+      "image": "./public/assets/image/Mathejpg.jpg",
+      "beschreibungstext": "Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.",
+      "analysis": [
         {
           "id": 1,
-          "frage": "Wie ist die Potenzmenge einer Menge M definiert?",
-          "antwort": "Die Potenzmenge ist die Menge aller Teilmengen von M."
+          "name": "Folgen",
+          "image": "./public/assets/image/Mathejpg.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu Folgen.",
+          "folgen": [
+            {
+              "id": 1, 
+              "frage": "Wie ist eine Folge definiert?", 
+              "antworten": [
+                "Eine Folge weist jeder natürlichen Zahl eine reelle Zahl zu.",
+                "Eine Folge weist jeder reellen Zahl eine natürliche Zahl zu."
+              ],
+              "lösung": "Eine Folge weist jeder natürlichen Zahl eine reelle Zahl zu."
+            },
+            {
+              "id": 2, 
+              "frage": "Wann ist eine Folge streng monoton steigend?", 
+              "antworten": [
+                "Eine Folge ist genau dann streng monoton steigend, wenn jedes Folgenglied echt größer als sein Vorgänger ist.",
+                "Eine Folge ist genau dann streng monoton steigend, wenn ein Folgenglied echt größer als sein Vorgänger ist."
+              ],
+              "lösung": "Eine Folge ist genau dann streng monoton steigend, wenn jedes Folgenglied echt größer als sein Vorgänger ist."
+            }
+          ]
         },
         {
           "id": 2,
-          "frage": "Was ist die Kardinalität einer Menge M?",
-          "antwort": "Die Kardinalität von M ist die Anzahl der Elemente von M."
+          "name": "Reihen",
+          "image": "./public/assets/image/Mathejpg.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu Reihen.",
+          "reihen": [
+            {
+              "id": 1, 
+              "frage": "Kann eine Reihe mehr als einen Grenzwert haben?", 
+              "antworten": [
+                "Nein, es existiert immer genau ein Grenzwert oder keiner. Bei alternierenden Reihen und Folgen können 2 oder mehr Häufungspunkte existieren.",
+                "Ja, es können auch mehrere Grenzwerte existieren. Bei alternierenden Reihen und Folgen können 2 oder mehr Grenzwerte existieren."
+              ],
+              "lösung": "Nein, es existiert immer genau ein Grenzwert oder keiner. Bei alternierenden Reihen und Folgen können 2 oder mehr Häufungspunkte existieren."
+            },
+            {
+              "id": 2, 
+              "frage": "Was macht die Taylorentwicklung?", 
+              "antworten": [
+                "Die Taylorentwicklung ist eine Approximation an eine (meist nicht algebraische) Funktion an einer Stelle (Entwicklungspunkt) durch eine algebraische Funktion.",
+                "Die Taylorentwicklung ist eine Approximation an eine (meist nicht trigonometrische) Funktion an einer Stelle (Entwicklungspunkt) durch eine trigonometrische Funktion."
+              ],
+              "lösung": "Die Taylorentwicklung ist eine Approximation an eine (meist nicht algebraische) Funktion an einer Stelle (Entwicklungspunkt) durch eine algebraische Funktion."
+            }
+          ]
         },
         {
           "id": 3,
-          "frage": "Welche Eigenschaften hat eine Äquivalenzrelation?",
-          "antwort": "Eine Äquivalenzrelation ist reflexiv, symmetrisch und transitiv."
+          "name": "Differenzialrechnung",
+          "image": "./public/assets/image/Mathejpg.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu Differenzialrechnung.",
+          "differenzialrechnung": [
+            {
+              "id": 1, 
+              "frage": "Wie ist Injektivität definiert?", 
+              "antworten": [
+                "Eine Funktion ist genau dann injektiv, wenn auf jedes Element der Zielmenge höchstens 1 Mal abgebildet wird.",
+                "Eine Funktion ist genau dann injektiv, wenn auf jedes Element der Zielmenge mindestens 1 Mal abgebildet wird."
+              ],
+              "lösung": "Eine Funktion ist genau dann injektiv, wenn auf jedes Element der Zielmenge höchstens 1 Mal abgebildet wird."
+            },
+            {
+              "id": 2, 
+              "frage": "Wie ist Surjektivität definiert?", 
+              "antwort": [
+                "Eine Funktion ist genau dann surjektiv, wenn auf jedes Element der Zielmenge mindestens 1 Mal abgebildet wird.",
+                "Eine Funktion ist genau dann injektiv, wenn auf jedes Element der Zielmenge höchstens 1 Mal abgebildet wird."
+              ],
+              "lösung": "Eine Funktion ist genau dann surjektiv, wenn auf jedes Element der Zielmenge mindestens 1 Mal abgebildet wird."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Integralrechnung",
+          "image": "./public/assets/image/Mathejpg.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu Integralrechnung.",
+          "integralrechnung": [
+            {
+              "id": 1, 
+              "frage": "Welche Ableitungsregel wird durch partielle Integration umgekehrt?", 
+              "antworten": [
+                "Produktregel",
+                "Kettenregel",
+                "Quotientenregel",
+                "Summandenregel"
+              ],
+              "lösung": "Produktregel"
+            },
+            {
+              "id": 2, 
+              "frage": "Welche Ableitungsregel wird durch Integration durch Substitution umgekehrt?", 
+              "antworten": [
+                "Kettenregel",
+                "Quotientenregel",
+                "Produktregel",
+                "Summandenregel"
+              ],
+              "lösung": "Kettenregel"
+            }
+          ]
         }
       ]
     },
-    "logik": {
-      "fragenUndAntworten": [
+    {
+      "id": 2,
+      "name": "Theoretische Informatik I",
+      "image": "./public/assets/image/thInf.jpg",
+      "beschreibungstext": "Fragen zu den Themen Mengen und Relationen.",
+      "theoretischeInformatikI": [
         {
           "id": 1,
-          "frage": "Wie ist eine erfüllbare Formel F definiert?",
-          "antwort": "F ist erfüllbar, falls es eine Interpretation gibt, die Modell für F ist."
+          "name": "Algebraische Strukturen",
+          "image": "./public/assets/image/thInf.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu algebraischen Strukturen.",
+          "algebraischeStrukturen": [
+            {
+              "id": 1,
+              "frage": "Wie ist die Potenzmenge einer Menge M definiert?",
+              "antworten": [
+                "Die Potenzmenge ist die Menge aller Teilmengen von M.",
+                "Die Potenzmenge ist die Vereinigung von Mengen.",
+                "Die Potenzmenge ist der Schnitt von Mengen."
+              ],
+              "lösung": "Die Potenzmenge ist die Menge aller Teilmengen von M."
+            },
+            {
+              "id": 2,
+              "frage": "Was ist die Kardinalität einer Menge M?",
+              "antworten": [
+                "Die Kardinalität von M ist die Anzahl der Elemente von M.",
+                "Die Kardinalität von M zeigt was für Elemente sich in M befinden."
+              ],
+              "lösung": "Die Kardinalität von M ist die Anzahl der Elemente von M."
+            },
+            {
+              "id": 3,
+              "frage": "Welche Eigenschaften hat eine Äquivalenzrelation?",
+              "antworten": [
+                "Eine Äquivalenzrelation ist reflexiv, symmetrisch und transitiv.",
+                "Eine Äquivalenzrelation ist reflexiv, antisymmetrisch und transitiv."
+              ],
+              "lösung": "Eine Äquivalenzrelation ist reflexiv, symmetrisch und transitiv."
+            }
+          ]
         },
         {
           "id": 2,
-          "frage": "Wie ist eine allgemeingültige Formel F definiert?",
-          "antwort": "F ist allgemeingültig, falls jede Interpretation ein Modell für F ist."
+          "name": "Logik",
+          "image": "./public/assets/image/thInf.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu Logik.",
+          "logik": [
+            {
+              "id": 1,
+              "frage": "Wie ist eine erfüllbare Formel F definiert?",
+              "antworten": [
+                "F ist erfüllbar, falls es eine Interpretation gibt, die Modell für F ist.",
+                "F ist erfüllbar, falls jede Interpretation ein Modell für F ist."
+              ],
+              "lösung": "F ist erfüllbar, falls es eine Interpretation gibt, die Modell für F ist."
+            },
+            {
+              "id": 2,
+              "frage": "Wie ist eine allgemeingültige Formel F definiert?",
+              "antworten": [
+                "F ist allgemeingültig, falls jede Interpretation ein Modell für F ist.",
+                "F ist allgemeingültig, falls es eine Interpretation gibt, die Modell für F ist."
+              ],
+              "lösung": "F ist allgemeingültig, falls jede Interpretation ein Modell für F ist."
+            },
+            {
+              "id": 3,
+              "frage": "Was ist eine Tautologie?",
+              "antworten": [
+                "Eine Tautologie ist eine allgemeingültige Formel.",
+                "Eine Tautologie ist eine erfüllbare Formel."
+              ],
+              "lösung": "Eine Tautologie ist eine allgemeingültige Formel."
+            }
+          ]
         },
         {
           "id": 3,
-          "frage": "Was ist eine Tautologie?",
-          "antwort": "Eine Tautologie ist eine allgemeingültige Formel."
-        }
-      ]
-    },
-    "algorithmen": {
-      "fragenUndAntworten": [
-        {
-          "id": 1,
-          "frage": "Was sagt die Churchsche These?",
-          "antwort": "Die Menge der durch eine Turingmaschine berechenbaren Abbildungen (formale Algorithmen) stimmt genau mit der Menge der intuitiv berechenbaren Abbildungen (intuitive Algorithmen) überein."
-        },
-        {
-          "id": 2,
-          "frage": "Wie viele Algorithmen gibt es?",
-          "antwort": "Es gibt abzählbar viele Algorithmen."
+          "name": "Algorithmen",
+          "image": "./public/assets/image/thInf.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu Algorithmen.",
+          "algorithmen": [
+            {
+              "id": 1,
+              "frage": "Was sagt die Churchsche These?",
+              "antworten": [
+                "Die Menge der durch eine Turingmaschine berechenbaren Abbildungen (formale Algorithmen) stimmt genau mit der Menge der intuitiv berechenbaren Abbildungen (intuitive Algorithmen) überein.",
+                "Die Menge der durch eine Turingmaschine berechenbaren Abbildungen (formale Algorithmen) stimmt nicht mit der Menge der intuitiv berechenbaren Abbildungen (intuitive Algorithmen) überein."
+              ],
+              "lösung": "Die Menge der durch eine Turingmaschine berechenbaren Abbildungen (formale Algorithmen) stimmt genau mit der Menge der intuitiv berechenbaren Abbildungen (intuitive Algorithmen) überein."
+            },
+            {
+              "id": 2,
+              "frage": "Wie viele Algorithmen gibt es?",
+              "antworten": [
+                "Es gibt abzählbar viele Algorithmen.",
+                "Es gibt überabzählbar viele Algorithmen."
+              ],
+              "lösung": "Es gibt abzählbar viele Algorithmen."
+            }
+          ]
         }
       ]
     }
-  }
+  ]
 }

@@ -1,3 +1,14 @@
+import AllLectures from '../pages/lectures';
+
+//---------------Vorlesungen------------------
+export function getAllLectures() {
+  let data = require('../db.json');
+  let allLectures = [];
+  data.vorlesungen.forEach((lecture) => {
+    allLectures.push(lecture.name)
+  });
+  return AllLectures;
+}
 //---------------Analysis------------------
 //Folgen
 export function getRandomFolgenQuestion() {

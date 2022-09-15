@@ -10,6 +10,8 @@ import NavbarComponent from "../components/navbar";
 import CarouselComponent from "../components/carousel";
 import FooterComponent from "../components/footer";
 
+import * as API from "../api/datenbankAPI"
+
 export default function Reihen() {
   return (
   <>
@@ -30,7 +32,7 @@ export default function Reihen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
 
-            <h2 className="fw-normal">Analysis</h2>
+            <h2 className="fw-normal">Analysis {API.getAllLectures}</h2>
             <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
           </Col>
 
