@@ -48,12 +48,14 @@ export function getAllTopics(lectureId) {
 export function getTopic(lectureId, topicId) {
   let data = require('../db.json');
   if(data.vorlesungen[lectureId - 1] != null) {
-    if(lectureId == 1) {
-      return data.vorlesungen[lectureId - 1].analysis[topicId - 1].name;
-    } else if(lectureId == 2) {
-      return data.vorlesungen[lectureId - 1].theoretischeInformatikI[topicId - 1].name;
-    } else {
+    if((data.vorlesungen[lectureId - 1].analysis[topicId - 1] != null) && (data.vorlesungen[lectureId - 1].theoretischeInformatikI[topicId - 1] != null)) {
       return "Themenabfrage noch nicht implementiert!";
+    } else {
+      if(lectureId == 1) {
+        return data.vorlesungen[lectureId - 1].analysis[topicId - 1].name;
+      } else if(lectureId == 2) {
+        return data.vorlesungen[lectureId - 1].theoretischeInformatikI[topicId - 1].name;
+      }
     }
   } else {
     return "Keine gültige VorlesungsID!";
