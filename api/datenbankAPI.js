@@ -5,9 +5,11 @@ export function getAllLectures() {
   let data = require('../db.json');
   let allLectures = [];
   data.vorlesungen.forEach((lecture) => {
-    allLectures.push(lecture.name)
+    allLectures.push(lecture.name);
+    console.log(lecture.name);
   });
-  return AllLectures;
+  console.log(allLectures);
+  return allLectures;
 }
 //---------------Analysis------------------
 //Folgen
