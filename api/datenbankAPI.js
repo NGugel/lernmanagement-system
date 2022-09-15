@@ -26,7 +26,8 @@ export function getLecture(lectureId) {
 export function getAllTopics(lectureId) {
   let data = require('../db.json');
   let allTopics = [];
-  data.vorlesungen[lectureId - 1].Analysis.forEach((topic) => {
+  let dataLecture = "data.vorlesungen[" + (lectureId - 1) + "]." + getLecture(lectureId);
+  dataLecture.forEach((topic) => {
     allTopics.push(topic.name);
   });
   return allTopics;
