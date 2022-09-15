@@ -13,13 +13,13 @@ function NavbarComponent() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Vorlesungen" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Analysis</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Theoretische Informatik</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Python</NavDropdown.Item>
+              <NavDropdown.Item href="/lecture">Analysis</NavDropdown.Item>
+              <NavDropdown.Item href="/lecture">Theoretische Informatik</NavDropdown.Item>
+              <NavDropdown.Item href="/lecture">Python</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Alle</NavDropdown.Item>
+              <NavDropdown.Item href="/lectures">Alle</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#home">Hilfe</Nav.Link>
           </Nav>

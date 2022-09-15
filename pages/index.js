@@ -32,6 +32,8 @@ export default function Home() {
 
             <h2 className="fw-normal">Analysis</h2>
             <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
+
+            <Button variant="danger" href="/lecture">Themen</Button>
           </Col>
 
           <Col lg="4">
@@ -39,6 +41,8 @@ export default function Home() {
 
             <h2 className="fw-normal">Theoretische Informatik I</h2>
             <p>Fragen zu den Themen Mengen und Relationen.</p>
+
+            <Button variant="danger" href="/lecture">Themen</Button>
           </Col>
 
           <Col lg="4">
@@ -46,18 +50,14 @@ export default function Home() {
 
             <h2 className="fw-normal">Python</h2>
             <p>Fragen rund um die Programmiersprache Python.</p>
-          </Col>
-        </Row>
 
-        <Row>
-          <Col lg="4"><Button variant="danger" href="#">Themen</Button></Col>
-          <Col lg="4"><Button variant="danger" href="#">Themen</Button></Col>
-          <Col lg="4"><Button variant="danger" href="#">Themen</Button></Col>
+            <Button variant="danger" href="/lecture">Themen</Button>
+          </Col>
         </Row>
         
         <Row>
           <Col className="center">
-            <a href="#">Weitere Vorlesungen</a>
+            <a href="/lectures">Weitere Vorlesungen</a>
           </Col>
         </Row>
         
