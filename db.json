@@ -11,7 +11,7 @@
           "name": "Folgen",
           "image": "./public/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Folgen.",
-          "folgen": [
+          "lerninhalt": [
             {
               "id": 1, 
               "frage": "Wie ist eine Folge definiert?", 
@@ -37,7 +37,7 @@
           "name": "Reihen",
           "image": "./public/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Reihen.",
-          "reihen": [
+          "lerninhalt": [
             {
               "id": 1, 
               "frage": "Kann eine Reihe mehr als einen Grenzwert haben?", 
@@ -63,7 +63,7 @@
           "name": "Differenzialrechnung",
           "image": "./public/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Differenzialrechnung.",
-          "differenzialrechnung": [
+          "lerninhalt": [
             {
               "id": 1, 
               "frage": "Wie ist Injektivität definiert?", 
@@ -89,7 +89,7 @@
           "name": "Integralrechnung",
           "image": "./public/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Integralrechnung.",
-          "integralrechnung": [
+          "lerninhalt": [
             {
               "id": 1, 
               "frage": "Welche Ableitungsregel wird durch partielle Integration umgekehrt?", 
@@ -127,7 +127,7 @@
           "name": "Algebraische Strukturen",
           "image": "./public/assets/image/thInf.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu algebraischen Strukturen.",
-          "algebraischeStrukturen": [
+          "lerninhalt": [
             {
               "id": 1,
               "frage": "Wie ist die Potenzmenge einer Menge M definiert?",
@@ -163,7 +163,7 @@
           "name": "Logik",
           "image": "./public/assets/image/thInf.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Logik.",
-          "logik": [
+          "lerninhalt": [
             {
               "id": 1,
               "frage": "Wie ist eine erfüllbare Formel F definiert?",
@@ -198,7 +198,7 @@
           "name": "Algorithmen",
           "image": "./public/assets/image/thInf.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Algorithmen.",
-          "algorithmen": [
+          "lerninhalt": [
             {
               "id": 1,
               "frage": "Was sagt die Churchsche These?",
