@@ -5,7 +5,7 @@
       "name": "Analysis",
       "image": "./public/assets/image/Mathejpg.jpg",
       "beschreibungstext": "Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.",
-      "Analysis": [
+      "analysis": [
         {
           "id": 1,
           "name": "Folgen",
