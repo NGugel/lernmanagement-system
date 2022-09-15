@@ -1,17 +1,18 @@
 import AllLectures from '../pages/lectures';
 
 //---------------Vorlesungen------------------
-//alle Vorlesungsnamen im Array abrufen
+//alle Vorlesungsnamen im Array (von Objekten) abrufen
 export function getAllLectures() {
   let data = require('../db.json');
-  let allLectures = [];
+  /*let allLectures = [];
   data.vorlesungen.forEach((lecture) => {
     allLectures.push(lecture.name);
-  });
-  return allLectures;
+  });*/
+  //return allLectures;
+  return data.vorlesungen;
 }
 
-//eine Vorlesung mittels id abrufen (Rueckgabe ist der Name der Vorlesung)
+//eine Vorlesung mittels id abrufen (Rueckgabe ist des Objekt der Vorlesung)
 export function getLecture(lectureId) {
   let data = require('../db.json');
   if(data.vorlesungen[lectureId - 1] != null) {
@@ -22,32 +23,29 @@ export function getLecture(lectureId) {
 }
 
 //---------------Themen------------------
-//alle Themennamen einer Vorlesung (via ID) im Array abrufen
+//alle Themennamen einer Vorlesung (via ID) im Array (von Objekten) abrufen
 export function getAllTopics(lectureId) {
   let data = require('../db.json');
   let allTopics = [];
   if(data.vorlesungen[lectureId - 1] != null) {
-    data.vorlesungen[lectureId - 1].themen.forEach((topic) => {
+    /*data.vorlesungen[lectureId - 1].themen.forEach((topic) => {
       allTopics.push(topic.name);
     });
-    return allTopics;
+    return allTopics;*/
+    return data.vorlesungen[lectureId -1].themen;
   } else {
     return "Keine gültige VorlesungsID!";
   }
 }
 
-//ein Thema einer Vorlesung mittels id (1. Argument: id der Vorlesung, 2. Argument: id des Themas) abrufen (Rueckgabe ist der Name des Themas)
+//ein Thema einer Vorlesung mittels id (1. Argument: id der Vorlesung, 2. Argument: id des Themas) abrufen (Rueckgabe ist des Objekt des Themas)
 export function getTopic(lectureId, topicId) {
   let data = require('../db.json');
   if(data.vorlesungen[lectureId - 1] != null) {
-    if((data.vorlesungen[lectureId - 1].analysis[topicId - 1] != null) && (data.vorlesungen[lectureId - 1].theoretischeInformatikI[topicId - 1] != null)) {
-      return "Themenabfrage noch nicht implementiert!";
+    if(data.vorlesungen[lectureId - 1].themen[topicId - 1] != null) {
+      return data.vorlesungen[lectureId - 1].themen[topicId - 1];
     } else {
-      if(lectureId == 1) {
-        return data.vorlesungen[lectureId - 1].analysis[topicId - 1].name;
-      } else if(lectureId == 2) {
-        return data.vorlesungen[lectureId - 1].theoretischeInformatikI[topicId - 1].name;
-      }
+      return "Datenbankeintrag existiert, aber Themenabfrage noch nicht implementiert!"
     }
   } else {
     return "Keine gültige VorlesungsID!";
