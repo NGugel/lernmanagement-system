@@ -26,11 +26,27 @@ export function getLecture(lectureId) {
 export function getAllTopics(lectureId) {
   let data = require('../db.json');
   let allTopics = [];
+  /*
   let dataLecture = "data.vorlesungen[" + (lectureId - 1) + "]." + getLecture(lectureId);
-  dataLecture.forEach((topic) => {
-    allTopics.push(topic.name);
-  });
-  return allTopics;
+  */
+  
+
+  if(data.vorlesungen[lectureId - 1] != null) {
+    if(lectureId == 1) {
+      data.vorlesungen[lectureId - 1].analysis.forEach((topic) => {
+        allTopics.push(topic.name);
+      });
+    } else if(lectureId == 2) {
+      data.vorlesungen[lectureId - 1].theoretischeInformatikI.forEach((topic) => {
+        allTopics.push(topic.name);
+      });
+    } else {
+      return "Themenabfrage noch nicht implementiert!";
+    }
+    return allTopics;
+  } else {
+    return "Keine gültige VorlesungsID!";
+  }
 }
 //---------------Analysis------------------
 //Folgen
