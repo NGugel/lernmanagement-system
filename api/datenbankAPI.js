@@ -27,17 +27,9 @@ export function getAllTopics(lectureId) {
   let data = require('../db.json');
   let allTopics = [];
   if(data.vorlesungen[lectureId - 1] != null) {
-    if(lectureId == 1) {
-      data.vorlesungen[lectureId - 1].analysis.forEach((topic) => {
-        allTopics.push(topic.name);
-      });
-    } else if(lectureId == 2) {
-      data.vorlesungen[lectureId - 1].theoretischeInformatikI.forEach((topic) => {
-        allTopics.push(topic.name);
-      });
-    } else {
-      return "Themenabfrage noch nicht implementiert!";
-    }
+    data.vorlesungen[lectureId - 1].themen.forEach((topic) => {
+      allTopics.push(topic.name);
+    });
     return allTopics;
   } else {
     return "Keine gültige VorlesungsID!";

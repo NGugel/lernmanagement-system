@@ -5,7 +5,7 @@
       "name": "Analysis",
       "image": "./public/assets/image/Mathejpg.jpg",
       "beschreibungstext": "Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.",
-      "analysis": [
+      "themen": [
         {
           "id": 1,
           "name": "Folgen",
@@ -121,7 +121,7 @@
       "name": "Theoretische Informatik I",
       "image": "./public/assets/image/thInf.jpg",
       "beschreibungstext": "Fragen zu den Themen Mengen und Relationen.",
-      "theoretischeInformatikI": [
+      "themen": [
         {
           "id": 1,
           "name": "Algebraische Strukturen",
