@@ -1,15 +1,24 @@
 import AllLectures from '../pages/lectures';
 
 //---------------Vorlesungen------------------
+//alle Vorlesungsnamen im Array abrufen
 export function getAllLectures() {
   let data = require('../db.json');
   let allLectures = [];
   data.vorlesungen.forEach((lecture) => {
     allLectures.push(lecture.name);
-    console.log(lecture.name);
   });
-  console.log(allLectures);
   return allLectures;
+}
+
+//eine Vorlesung mittels id abrufen (Rueckgabe ist der Name der Vorlesung)
+export function getLecture(id) {
+  let data = require('../db.json');
+  if(data.vorlesungen[id - 1] != null) {
+    return data.vorlesungen[id - 1].name;
+  } else {
+    return "Keine gültige VorlesungsID!";
+  }
 }
 //---------------Analysis------------------
 //Folgen
