@@ -32,7 +32,7 @@ export default function Reihen() {
           <Col lg="4">
             <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
 
-            <h2 className="fw-normal">Analysis {API.getLecture(2)}</h2>
+            <h2 className="fw-normal">Analysis {API.getLecture(3)}</h2>
             <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
           </Col>
 
