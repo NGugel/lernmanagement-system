@@ -89,12 +89,8 @@ export function getRandomContent(lectureId, topicId) {
   let data = require('../db.json');
   if(data.vorlesungen[lectureId - 1] != null) {
     if(data.vorlesungen[lectureId - 1].themen[topicId - 1] != null) {
-      if(data.vorlesungen[lectureId - 1].themen[topicId - 1].lerninhalt[contentId - 1] != null) {
-        let randomNumber = Math.floor(Math.random() * data.vorlesungen[lectureId - 1].themen[topicId - 1].lerninhalt.length);
-        return data.vorlesungen[lectureId - 1].themen[topicId - 1].lerninhalt[randomNumber];
-      } else {
-        return "Keine gültige LerninhaltsID!";
-      }
+      let randomNumber = Math.floor(Math.random() * data.vorlesungen[lectureId - 1].themen[topicId - 1].lerninhalt.length);
+      return data.vorlesungen[lectureId - 1].themen[topicId - 1].lerninhalt[randomNumber];
     } else {
       return "Keine gültige ThemenID!"
     }
