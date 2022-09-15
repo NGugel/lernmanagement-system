@@ -15,7 +15,7 @@ export function getAllLectures() {
 export function getLecture(lectureId) {
   let data = require('../db.json');
   if(data.vorlesungen[lectureId - 1] != null) {
-    return data.vorlesungen[lectureId - 1].name;
+    return data.vorlesungen[lectureId - 1];
   } else {
     return "Keine gültige VorlesungsID!";
   }
