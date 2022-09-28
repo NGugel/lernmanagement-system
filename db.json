@@ -3,13 +3,13 @@
     {
       "id": 1,
       "name": "Analysis",
-      "image": "./public/assets/image/Mathejpg.jpg",
+      "image": "/assets/image/Mathejpg.jpg",
       "beschreibungstext": "Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.",
       "themen": [
         {
           "id": 1,
           "name": "Folgen",
-          "image": "./public/assets/image/Mathejpg.jpg",
+          "image": "/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Folgen.",
           "lerninhalt": [
             {
@@ -35,7 +35,7 @@
         {
           "id": 2,
           "name": "Reihen",
-          "image": "./public/assets/image/Mathejpg.jpg",
+          "image": "/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Reihen.",
           "lerninhalt": [
             {
@@ -61,7 +61,7 @@
         {
           "id": 3,
           "name": "Differenzialrechnung",
-          "image": "./public/assets/image/Mathejpg.jpg",
+          "image": "/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Differenzialrechnung.",
           "lerninhalt": [
             {
@@ -87,7 +87,7 @@
         {
           "id": 4,
           "name": "Integralrechnung",
-          "image": "./public/assets/image/Mathejpg.jpg",
+          "image": "/assets/image/Mathejpg.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Integralrechnung.",
           "lerninhalt": [
             {
@@ -119,13 +119,13 @@
     {
       "id": 2,
       "name": "Theoretische Informatik I",
-      "image": "./public/assets/image/thInf.jpg",
+      "image": "/assets/image/thInf.jpg",
       "beschreibungstext": "Fragen zu den Themen Mengen und Relationen.",
       "themen": [
         {
           "id": 1,
           "name": "Algebraische Strukturen",
-          "image": "./public/assets/image/thInf.jpg",
+          "image": "/assets/image/thInf.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu algebraischen Strukturen.",
           "lerninhalt": [
             {
@@ -161,7 +161,7 @@
         {
           "id": 2,
           "name": "Logik",
-          "image": "./public/assets/image/thInf.jpg",
+          "image": "/assets/image/thInf.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Logik.",
           "lerninhalt": [
             {
@@ -196,7 +196,7 @@
         {
           "id": 3,
           "name": "Algorithmen",
-          "image": "./public/assets/image/thInf.jpg",
+          "image": "/assets/image/thInf.jpg",
           "beschreibungstext": "Hier lernen Sie alles wichtige zu Algorithmen.",
           "lerninhalt": [
             {

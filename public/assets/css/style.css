@@ -48,34 +48,34 @@ body {
         ---------- Carousel ----------
 
 ***/
-.carousel {
+.featre-carousel.carousel {
   margin-bottom: 4rem;
 }
-.carousel-caption {
+.featre-carousel .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
-.carousel-item {
+.featre-carousel .carousel-item {
   height: 32rem;
 }
-.featurette-divider {
+.featre-carousel .featurette-divider {
   margin: 5rem 0;
 }
-.featurette-heading {
+.featre-carousel .featurette-heading {
   letter-spacing: -.05rem;
 }
 @media (min-width: 40em) {
-  .carousel-caption p {
+  .featre-carousel .carousel-caption p {
     margin-bottom: 1.25rem;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-  .featurette-heading {
+  .featre-carousel .featurette-heading {
     font-size: 50px;
   }
 }
 @media (min-width: 62em) {
-  .featurette-heading {
+  .featre-carousel .featurette-heading {
     margin-top: 7rem;
   }
 }
@@ -183,7 +183,7 @@ body {
   display: flex;
   padding-left: 0;
   list-style: none;
-  margin: 0;
+  margin: 2em 0 0 0;
   padding: 0;
   list-style-type: none;
 }
@@ -208,4 +208,20 @@ body {
 .pagination.rounded-design .page-item:hover {
   border: 1px solid #6c757d;
   border-radius: 100%;
+}
+
+/***
+
+        ---------- Question Card ----------
+
+***/
+.question-card {
+  width: 100%;
+  padding: 0
+}
+.question-row {
+  margin-bottom: 2em;
+}
+.btnWrapper {
+  width: 100%
 }

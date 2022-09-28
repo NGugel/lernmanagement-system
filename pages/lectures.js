@@ -1,10 +1,16 @@
 import { Container, InputGroup, Form, Button, Row, Col, Card } from 'react-bootstrap';
 
+import React from 'react';
 import HeadComponent from "../components/hidden/head";
 import FootComponent from "../components/hidden/foot";
 import NavbarComponent from "../components/navbar";
 import FooterComponent from "../components/footer";
+import LectureCardComponent from "../components/lecture-card";
 import { flexbox } from '@mui/system';
+
+import * as API from "../api/datenbankAPI"
+
+let lectures = API.getAllLectures()
 
 export default function AllLectures() {
   return (
@@ -33,44 +39,13 @@ export default function AllLectures() {
 
         <Container className="d-flex justify-content-md-center lectures-container">
             <Row>
-                <Col xs className="mb-4">
-                    <Card>
-                        <Card.Img variant="top" src="/assets/image/Mathejpg.jpg"/>
-                        <Card.Body>
-                            <Card.Title>Mathematik I: Analysis</Card.Title>
-                            <Card.Text>
-                                Im Vorlesungsmodul Analysis finden Sie Themen zu Folgen, Reihen, Abbildungen und vieles mehr.
-                            </Card.Text>
-                            <Button variant="primary" href="/lecture">Themenauswahl</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                
-                <Col xs className="mb-4">
-                    <Card>
-                        <Card.Img variant="top" src="/assets/image/thInf.jpg"/>
-                        <Card.Body>
-                            <Card.Title>Theoretische Informatik I</Card.Title>
-                            <Card.Text>
-                                Im Vorlesungsmodul TI I finden Sie Themen rund um Mengenlehre und grundlagen zur Logik.
-                            </Card.Text>
-                            <Button variant="primary" href="/lecture">Themenauswahl</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col xs className="mb-4">
-                    <Card>
-                        <Card.Img variant="top" src="/assets/image/prGrundlagen.png"/>
-                        <Card.Body>
-                            <Card.Title>Programmiersprachen: Python</Card.Title>
-                            <Card.Text>
-                                Im Vorlesungsmodul Programmiersprachen Python finden Sie Themen rund um die Programmiersprache Python.
-                            </Card.Text>
-                            <Button variant="primary" href="/lecture">Themenauswahl</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
+                {(() => {
+                    let results = []
+                    for(const lecture of lectures) {
+                        results.push(<LectureCardComponent id={lecture['id']} title={lecture['name']} text={lecture['beschreibungstext']} image={lecture['image']}></LectureCardComponent>)
+                    }
+                    return results
+                })()}
             </Row>
         </Container>
 

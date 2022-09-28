@@ -2,7 +2,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function CarouselComponent() {
   return (
-    <Carousel>
+    <Carousel className="featre-carousel">
       <Carousel.Item>
         <img className="d-block w-100" src="../assets/image/bild1.jpg"/>
         <Carousel.Caption>

@@ -1,10 +1,10 @@
-import { Container, ListGroup, Pagination, InputGroup, Form, Button, Row, Col, Card } from 'react-bootstrap';
+import { Container, Button, Col } from 'react-bootstrap';
 
 import HeadComponent from "../components/hidden/head";
 import FootComponent from "../components/hidden/foot";
 import NavbarComponent from "../components/navbar";
 import FooterComponent from "../components/footer";
-import { flexbox } from '@mui/system';
+import QuestionComponent from '../components/question';
 
 export default function TopicTest() {
   return (
@@ -20,18 +20,24 @@ export default function TopicTest() {
             <h1 class="main-title">Thema: Test</h1>
         </Container>
 
-        <Pagination className="rounded-design justify-content-center">
-            <Pagination.First />
-            <Pagination.Prev />
+        <Container class="d-flex justify-content-center">
+          <Col lg="6">
+            <QuestionComponent title="Frage #1" question="Was ist 1*1?"></QuestionComponent>
+            <QuestionComponent title="Frage #2" question="Was ist 1*2?"></QuestionComponent>
+            <Container className="btnWrapper" class="d-flex justify-content-center">
+              <Button variant="primary">Absenden</Button>
+            </Container>
+          </Col>
+        </Container>
+
+        {/*<Pagination id="qpag" className="rounded-design justify-content-center">
+            <Pagination.Prev/>
             <Pagination.Item active>{1}</Pagination.Item>
-            <Pagination.Item>{2}</Pagination.Item>
+            <Pagination.Item >{2}</Pagination.Item>
+            <Pagination.Item>{3}</Pagination.Item>
             <Pagination.Item>{4}</Pagination.Item>
-            <Pagination.Item>{5}</Pagination.Item>
-            <Pagination.Item>{6}</Pagination.Item>
-            <Pagination.Item>{7}</Pagination.Item>
-            <Pagination.Next />
-            <Pagination.Last />
-        </Pagination>
+            <Pagination.Next/>
+          </Pagination>*/}
 
       {/* Footer */}
       <FooterComponent></FooterComponent>
