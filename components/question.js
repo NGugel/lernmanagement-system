@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 
 
-function QuestionComponent({title, question}) {
+function QuestionComponent({title, question, answers}) {
   return (
     <Row className="question-row">
         <Card className="question-card">
@@ -13,9 +13,13 @@ function QuestionComponent({title, question}) {
             <Card.Title>{question}</Card.Title>
             <Card.Text>
                 <Form>
-                    <Form.Check type="radio" name="q1" label="Die Antwort auf die Frage ist 3"/>
-                    <Form.Check type="radio" name="q1" label="Nein ich würde sagen es ist 5"/>
-                    <Form.Check type="radio" name="q1" label="Oder ist es vielleicht doch 1"/>
+                    {(() => {
+                        let results = []
+                        for(const answer of answers) {
+                            results.push(<Form.Check type="radio" name={"q"+question['id']} label={answer}/>)
+                        }
+                        return results
+                    })()}
                 </Form>
             </Card.Text>
         </Card.Body>

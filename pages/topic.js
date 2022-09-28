@@ -6,6 +6,8 @@ import NavbarComponent from "../components/navbar";
 import FooterComponent from "../components/footer";
 import QuestionComponent from '../components/question';
 
+import * as API from "../api/datenbankAPI"
+
 export default function TopicTest() {
 
   const lectureId = 1
@@ -24,20 +26,18 @@ export default function TopicTest() {
     <main>
         {/* Questions */}
         <Container className="topics">
-            <h1 class="main-title">Thema: Test</h1>
+            <h1 class="main-title">Thema: {topic['name']}</h1>
         </Container>
 
         <Container class="d-flex justify-content-center">
           <Col lg="6">
             {(() => {
                 let results = []
-                for(const topic of topics) {
-                    results.push(<TopicCardComponent id={topic['id']} title={topic['name']} text={topic['beschreibungstext']} image={topic['image']}></TopicCardComponent>)
+                for(const question of questions) {
+                    results.push(<QuestionComponent title={"Frage #"+question['id']} question={question['frage']} answers={question['antworten']}></QuestionComponent>)
                 }
                 return results
             })()}
-            <QuestionComponent title="Frage #1" question="Was ist 1*1?"></QuestionComponent>
-            <QuestionComponent title="Frage #2" question="Was ist 1*2?"></QuestionComponent>
             <Container className="btnWrapper" class="d-flex justify-content-center">
               <Button variant="primary">Absenden</Button>
             </Container>
