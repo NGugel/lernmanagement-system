@@ -2,6 +2,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import * as API from "../api/datenbankAPI"
+
+let lectures = API.getAllLectures()
 
 function NavbarComponent() {
   return (
@@ -15,9 +18,13 @@ function NavbarComponent() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <NavDropdown title="Vorlesungen" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/lecture">Analysis</NavDropdown.Item>
-              <NavDropdown.Item href="/lecture">Theoretische Informatik</NavDropdown.Item>
-              <NavDropdown.Item href="/lecture">Python</NavDropdown.Item>
+              {(() => {
+                  let results = []
+                  for(const lecture of lectures) {
+                      results.push(<NavDropdown.Item href={"/lecture_"+(lecture['name'].toLowerCase().split(' ').join('_'))}>{lecture['name']}</NavDropdown.Item>)
+                  }
+                  return results
+              })()}
               <NavDropdown.Divider />
               <NavDropdown.Item href="/lectures">Alle</NavDropdown.Item>
             </NavDropdown>

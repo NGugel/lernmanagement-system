@@ -9,6 +9,11 @@ import FootComponent from "../components/hidden/foot";
 import NavbarComponent from "../components/navbar";
 import CarouselComponent from "../components/carousel";
 import FooterComponent from "../components/footer";
+import FeatureLectureComponent from "../components/feature-lecture";
+
+import * as API from "../api/datenbankAPI"
+
+let lectures = API.getAllLectures()
 
 export default function Home() {
   return (
@@ -27,32 +32,16 @@ export default function Home() {
         <h1 class="main-title">Beliebte Vorlesungen</h1>
 
         <Row>
-          <Col lg="4">
-            <img className="roundedImage" src="assets/image/Mathejpg.jpg"/>
-
-            <h2 className="fw-normal">Analysis</h2>
-            <p>Hier lernen Sie alles rund um Folgen, Reihen und Abbildungen.</p>
-
-            <Button variant="danger" href="/lecture">Themen</Button>
-          </Col>
-
-          <Col lg="4">
-            <img className="roundedImage" src="assets/image/thInf.jpg"/>
-
-            <h2 className="fw-normal">Theoretische Informatik I</h2>
-            <p>Fragen zu den Themen Mengen und Relationen.</p>
-
-            <Button variant="danger" href="/lecture">Themen</Button>
-          </Col>
-
-          <Col lg="4">
-            <img className="roundedImage" src="assets/image/prGrundlagen.png"/>
-
-            <h2 className="fw-normal">Python</h2>
-            <p>Fragen rund um die Programmiersprache Python.</p>
-
-            <Button variant="danger" href="/lecture">Themen</Button>
-          </Col>
+          {(() => {
+              let results = []
+              let i = 0
+              for(const lecture of lectures) {
+                  if(i>=3) break
+                  results.push(<FeatureLectureComponent title={lecture['name']} text={lecture['beschreibungstext']} image={lecture['image']}></FeatureLectureComponent>)
+                  i++
+              }
+              return results
+          })()}
         </Row>
         
         <Row>

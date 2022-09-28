@@ -76,7 +76,7 @@
             {
               "id": 2, 
               "frage": "Wie ist Surjektivität definiert?", 
-              "antwort": [
+              "antworten": [
                 "Eine Funktion ist genau dann surjektiv, wenn auf jedes Element der Zielmenge mindestens 1 Mal abgebildet wird.",
                 "Eine Funktion ist genau dann injektiv, wenn auf jedes Element der Zielmenge höchstens 1 Mal abgebildet wird."
               ],
@@ -216,6 +216,32 @@
                 "Es gibt überabzählbar viele Algorithmen."
               ],
               "lösung": "Es gibt abzählbar viele Algorithmen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lineare Algebra",
+      "image": "/assets/image/Mathejpg.jpg",
+      "beschreibungstext": "Hier lernen Sie alles rund um Matrizen, Vektorräumen und linearen Abbildungen.",
+      "themen": [
+        {
+          "id": 1,
+          "name": "Lineare Abbildungen",
+          "image": "/assets/image/Mathejpg.jpg",
+          "beschreibungstext": "Hier lernen Sie alles wichtige zu linearen Abbildungen.",
+          "lerninhalt": [
+            {
+              "id": 1, 
+              "frage": "Welche Eigenschaften müssen bei einer linearen Abbildung erfüllt sein?", 
+              "antworten": [
+                "Assoziativität und Kommutativität",
+                "Existenz eines neutralen Elements und inversen Elementen",
+                "Additivität und Homogenität"
+              ],
+              "lösung": "Additivität und Homogenität"
             }
           ]
         }
