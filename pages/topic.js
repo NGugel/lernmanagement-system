@@ -7,6 +7,13 @@ import FooterComponent from "../components/footer";
 import QuestionComponent from '../components/question';
 
 export default function TopicTest() {
+
+  const lectureId = 1
+  const topicId = 1
+  const topic = API.getTopic(lectureId, topicId)
+
+  const questions = API.getAllContent(lectureId, topicId)
+
   return (
   <>
     <HeadComponent title="DHBW Lernsoftware - Thema"></HeadComponent>
@@ -22,6 +29,13 @@ export default function TopicTest() {
 
         <Container class="d-flex justify-content-center">
           <Col lg="6">
+            {(() => {
+                let results = []
+                for(const topic of topics) {
+                    results.push(<TopicCardComponent id={topic['id']} title={topic['name']} text={topic['beschreibungstext']} image={topic['image']}></TopicCardComponent>)
+                }
+                return results
+            })()}
             <QuestionComponent title="Frage #1" question="Was ist 1*1?"></QuestionComponent>
             <QuestionComponent title="Frage #2" question="Was ist 1*2?"></QuestionComponent>
             <Container className="btnWrapper" class="d-flex justify-content-center">

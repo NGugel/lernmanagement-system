@@ -13,7 +13,7 @@ function LectureCardComponent({id, title, text, image}) {
                 <Card.Text>
                     {text}
                 </Card.Text>
-                <Button variant="primary" href={"/lecture?id="+id}>Themenauswahl</Button>
+                <Button variant="primary" href={"/lecture-"+title}>Themenauswahl</Button>
             </Card.Body>
         </Card>
     </Col>
