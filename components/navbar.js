@@ -28,7 +28,6 @@ function NavbarComponent() {
               <NavDropdown.Divider />
               <NavDropdown.Item href="/lectures">Alle</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#home">Hilfe</Nav.Link>
           </Nav>
           <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" id="loginButton"><i class="bi bi-person-fill"></i>Login</button>
         </Navbar.Collapse>

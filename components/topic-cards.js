@@ -13,7 +13,6 @@ function TopicCardComponent({id, title, text, image}) {
           <p className="lead">{text}</p>
           <div className="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
               <Button variant="primary" size="lg" className="px-4 me-md-2 fw-bold" href={"/topic_"+(title.toLowerCase().split(' ').join('_'))}>Test anfangen</Button>
-              <Button variant="outline-secondary" size="lg" className="px-4 me-md-2 fw-bold">Infos</Button>
           </div>
       </Col>
     </Row>
